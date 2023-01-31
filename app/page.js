@@ -5,5 +5,12 @@ import styles from "./page.module.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  return <main className={styles.main}>now we start with our shop</main>;
+  return (
+    <main className={styles.main}>
+      now we start with our shop
+      <br />
+      <br />
+      it is gonna be awesome
+    </main>
+  );
 }
