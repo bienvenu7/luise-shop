@@ -1,12 +1,14 @@
-import Image from "next/image";
-import { Inter } from "@next/font/google";
-import styles from "./page.module.css";
+import { Roboto } from "@next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Roboto({
+  subsets: ["latin"],
+  weight: "700",
+  style: "normal",
+});
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <main className={inter.className}>
       now we start with our shop
       <br />
       <br />
