@@ -1,7 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
 @import "../sass/_vars";
 
 * {
   padding: 0;
-  bottom: 0;
+  margin: 0;
   box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: $white-clr;
+}
+
+.navbar {
+  &__container {
+    height: 80px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    border-bottom: 1px solid $pink-clr;
+    color: $red-clr;
+  }
+}
+
+.hero {
+  &__container {
+    width: 100vw;
+    height: 810px;
+  }
+
+  &__image {
+    width: 313px;
+    height: 352px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    overflow: hidden;
+
+    & > svg {
+      fill: $pink-clr !important;
+      position: relative;
+    }
+
+    & > img {
+      width: 50%;
+      height: 100%;
+      position: absolute;
+    }
+  }
+
+  &__content {
+    margin: 0 auto;
+    width: 260px;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 20px;
+
+    & > h3 {
+      font-size: 24px;
+      font-weight: bold;
+      font-style: normal;
+      color: $red-clr;
+      letter-spacing: 0.25px;
+    }
+
+    p {
+      margin-top: 24px;
+      font-size: 16px;
+      font-weight: 400;
+      font-style: normal;
+      color: $black-clr;
+      text-align: center;
+      letter-spacing: 0.15px;
+    }
+
+    & > button {
+      margin-top: 44px;
+      font-size: 16px;
+      font-weight: bold;
+      font-style: normal;
+      color: white;
+      background-color: $red-clr;
+      border: none;
+      border-radius: 50px;
+      width: 214px;
+      height: auto;
+      padding: 16px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: 250ms all ease-out;
+
+      &:hover {
+        background-color: transparent;
+        color: $red-clr;
+      }
+    }
+  }
 }

@@ -1,10 +1,16 @@
+import Footer from "./Footer";
 import "./globals.scss";
+import Header from "./Header";
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <head />
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
